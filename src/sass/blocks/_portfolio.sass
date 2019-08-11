@@ -1,0 +1,30 @@
+.portfolio
+  padding-top: 92px
+  padding-bottom: 97px
+  background: $bg-color url('../img/portfolio/bg.jpg') repeat-y center left
+  background-size: 50%
+  &__title
+    max-width: 800px
+    font-size: 30px
+    line-height: 45px
+    margin: auto
+    margin-bottom: 92px
+  &__arrows
+    max-width: 120px
+    margin: auto
+    margin-top: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+@media (max-width: 600px)
+  .portfolio
+    padding-top: 40px
+    padding-bottom: 60px
+    &__title
+      max-width: 100%
+      font-size: 18px
+      line-height: normal
+      margin-bottom: 40px
+    &__arrows
+      margin-top: 25px

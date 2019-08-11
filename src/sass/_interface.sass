@@ -1,0 +1,74 @@
+*
+  box-sizing: border-box
+
+
+body
+  color: $font-color
+  +reg
+
+.container 
+  width: 1170px
+  margin: auto
+
+.btn
+  +bold
+  display: inline-block
+  border-radius: 10px
+  background-color: $main-color
+  border: none
+  padding: 18px 30px
+  &:hover
+    background-color: lighten($main-color,10%)
+    cursor: pointer
+  &:focus
+    outline: none
+
+.section
+  padding: 75px 0
+  &-title
+    text-align: center
+    font-size: 24px
+    +bold
+  &-subtitle
+    display: block
+    font-size: 16px
+.input
+  border: 1px solid $border-input
+  border-radius: 10px
+  padding: 23px 26px
+  font-size: 15px
+  color: $input-text
+
+.arrows
+  &__left, &__right
+    &:hover
+      cursor: pointer
+
+
+
+
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+    width: 92%
+@media (max-width: 768px)
+  .container
+    max-width: 600px
+    widows: 92%
+@media (max-width: 567px)
+  .container
+    max-width: 450px
+    widows: 92%
+@media (max-width: 320px)
+  .container
+    width: 277px
+  .section
+    padding: 50px 0
+  .offer
+    &__input
+      padding: 23px 20px
+  div.slider__item
+    .slider__image
+      width: 246px
+      margin: auto
+  
